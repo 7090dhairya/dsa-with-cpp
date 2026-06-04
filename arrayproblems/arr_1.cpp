@@ -3,23 +3,19 @@
 #include<iostream>
 using namespace std ; 
 
-
-int largest(int arr[] , int n){
-    int largest = arr[0]; 
-    for(int i =0 ; i<= n ; i ++){
-        if(arr[i] > largest){
-            largest = arr[i];
-
+int largest(int arr[], int n){
+    int largest = 0 ;
+    for(int i = 0 ; i<= n ; i ++){
+        if(arr[i]>largest){
+            largest = arr[i] ;
         }
     }
-
-    cout<<largest; 
-
+    cout << largest ;
+    return largest ; 
 }
 
 int main(){
-    int arr[] = {1, 8, 7, 56, 90};
-    int n = 4 ;
-
-    largest(arr , n);
+    int arr[] = {12,3,4,5,33,2};
+    int n = 5 ; 
+    largest(arr , n) ; 
 }
