@@ -2,18 +2,24 @@
 #include<iostream>
 using namespace std ;
 
-void selection_sort(int arr[], int n){
-    for(int i =0 ; i< n; i++){
+void selection_sort(int arr[], int n ){
+    for(int i=0 ; i<n ; i++){
         int mini = i ; 
-        for(int j=i+1 ; j< n ; j++){
+        for(int j = i+1 ; j<n  ; j++){
             if(arr[j] < arr[mini]){
-                mini = j  ; 
+              mini = j ; 
+            
+
             }
+
+           
         }
-        swap(arr[mini],arr[i] )  ;
+         swap(arr[i] , arr[mini]) ; 
     }
 
 }
+
+
 
 int main(){
     int n ;
