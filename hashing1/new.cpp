@@ -7,5 +7,8 @@ int hey ;
 
 int main(){
     int status ;
-    int copy  
+    int copy ; 
+
+    int stablity ; 
+    
 }
